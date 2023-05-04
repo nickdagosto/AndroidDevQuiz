@@ -1,17 +1,331 @@
 import random
 
 study_guide = {
-    'Chapter 1: GeoQuiz': [
+    'Chapter 2': [
         {
-            'question': 'Which of the following is NOT a concept covered in Chapter 1 of GeoQuiz?',
+            'question': 'What unit of measurement should be used for font sizes in Android programming?',
             'options': [
-                'a) Activity',
-                'b) ReverseDNS',
-                'c) lateinit',
-                'd) RecyclerView'
+                'a) px',
+                'b) dp',
+                'c) sp',
+                'd) pt'
             ],
             'answer': 'C'
+        }
+    ],
+    'Chapter 3': [
+        {
+            'question': 'Which of the following is NOT part of the Android Activity Lifecycle?',
+            'options': [
+                'a) onCreate',
+                'b) onStart',
+                'c) onResume',
+                'd) onAttach'
+            ],
+            'answer': 'D'
+        }
+    ],
+    'Chapter 4': [
+        {
+            'question': 'What is the purpose of ViewModel in Android programming?',
+            'options': [
+                'a) To store UI-related data',
+                'b) To manage database connections',
+                'c) To handle network requests',
+                'd) To manage app permissions'
+            ],
+            'answer': 'A'
         },
+
+        {
+            'question': 'How does a ViewModel help mitigate memory leaks in Android app development?',
+            'options': [
+                'a) By using weak references for UI components',
+                'b) By separating UI-related data from the Activity or Fragment lifecycle',
+                'c) By using a garbage collection mechanism for network requests',
+                'd) By incorporating a built-in mechanism to manage app permissions'
+            ],
+            'answer': 'B'
+        }
+    ],
+    'Chapter 7': [
+        {
+            'question': 'Which of the following is an example of an Implicit Intent in Android programming?',
+            'options': [
+                'a) Opening a specific app\'s settings',
+                'b) Displaying a web page in a browser',
+                'c) Navigating between activities in the same app',
+                'd) Displaying a list of installed apps'
+            ],
+            'answer': 'B'
+        },
+      {
+            'question': 'In the context of Android app development, which of the following best describes an intent?',
+            'options': [
+            'a) A mechanism for opening a specific app\'s settings',
+            'b) A method for displaying a web page in a browser',
+            'c) A messaging object used for requesting an action from another component or the OS',
+            'd) An API for displaying a list of installed apps'
+            ],
+            'answer': 'C'
+            }
+    ],
+    'Chapter 10': [
+        {
+            'question': 'In a RecyclerView Adapter, which method is responsible for creating a ViewHolder instance?',
+            'options': [
+                'a) onCreateViewHolder',
+                'b) onBindViewHolder',
+                'c) getItemCount',
+                'd) getItemViewType'
+            ],
+            'answer': 'A'
+        }
+    ],
+    'Chapter 11': [
+        {
+            'question': 'In a ConstraintLayout, what is the purpose of using "match_constraints"?',
+            'options': [
+                'a) To match the size of the parent view',
+                'b) To make the view as big as its contents',
+                'c) To make the view a fixed size',
+                'd) To make the view expand to fill available space'
+            ],
+            'answer': 'D'
+        }
+    ],
+    'Chapter 12': [
+        {
+            'question': 'Which of the following is NOT a part of creating a database with Room in Android programming?',
+            'options': [
+                'a) Defining entities',
+                'b) Creating a DAO',
+            'c) Implementing a Repository pattern',
+            'd) Registering the database with the AndroidManifest.xml'
+        ],
+        'answer': 'D'
+    }
+],
+'Chapter 13': [
+    {
+        'question': 'In Android navigation, what does "safeArgs" refer to?',
+        'options': [
+            'a) Type-safe arguments passed between navigation destinations',
+            'b) A set of predefined arguments for common navigation scenarios',
+            'c) A mechanism for validating navigation arguments at runtime',
+            'd) A tool for generating navigation-related code'
+        ],
+        'answer': 'A'
+    }
+],
+'Chapter 14': [
+    {
+        'question': 'What is the purpose of a DialogFragment in Android programming?',
+        'options': [
+            'a) To display a floating window with content',
+            'b) To create reusable UI components',
+            'c) To manage app settings and preferences',
+            'd) To implement navigation between app screens'
+        ],
+        'answer': 'A'
+    }
+],
+'Chapter 20': [
+    {
+        'question': 'Which of the following libraries is used for JSON parsing in Android programming?',
+        'options': [
+            'a) Retrofit',
+            'b) Moshi',
+            'c) Coil',
+            'd) Glide'
+        ],
+        'answer': 'B'
+    }
+],
+'Chapter 21': [
+    {
+        'question': 'In Android programming, what is the primary purpose of a SearchView?',
+        'options': [
+            'a) To display search results',
+            'b) To provide a user interface for entering search queries',
+            'c) To perform search queries on a data set',
+            'd) To store search history'
+        ],
+        'answer': 'B'
+    }
+],
+'Chapter 24': [
+    {
+        'question': 'In Android custom views, what is the purpose of the onDraw() method?',
+        'options': [
+            'a) To respond to touch events',
+            'b) To create the view\'s layout',
+            'c) To draw the view\'s content',
+            'd) To measure the view\'s dimensions'
+        ],
+        'answer': 'C'
+    }
+],
+'Chapter 25': [
+    {
+        'question': 'Which of the following Android components is used to play multiple animations together?',
+        'options': [
+            'a) AnimatorSet',
+            'b) ObjectAnimator',
+            'c) ValueAnimator',
+            'd) AnimationDrawable'
+        ],
+        'answer': 'A'
+    }
+],
+'Chapter 1': [
+    {
+        'question':'Q19: What is the purpose of the \'lateinit\' keyword in Kotlin?',
+            'options': [
+                'a) To declare a non-null variable without initializing it immediately',
+                'b) To initialize a variable with a default value',
+                'c) To create a singleton instance of a class',
+                'd) To delay the initialization of a variable until it is first accessed'
+            ],
+            'answer': 'A'
+        }
+    ],
+    'Chapter 3': [
+        {
+            'question': 'Q20: In the Android Activity Lifecycle, what method is called when the activity is partially obscured by another activity?',
+            'options': [
+                'a) onPause',
+                'b) onStop',
+                'c) onDestroy',
+                'd) onRestart'
+            ],
+            'answer': 'A'
+        }
+    ],
+    'Chapter 4': [
+        {
+            'question': 'Q21: Which of the following can cause a memory leak in Android programming?',
+            'options': [
+                'a) Static references to activity instances',
+                'b) ViewModel instances',
+                'c) SavedStateHandle instances',
+                'd) Android property delegates'
+            ],
+            'answer': 'A'
+        }
+    ],
+    'Chapter 7': [
+        {
+            'question': 'Q22: What is the primary purpose of the AndroidManifest.xml file?',
+            'options': [
+                'a) To define the app\'s user interface',
+                'b) To declare app components and permissions',
+                'c) To store app configuration settings',
+                'd) To manage the app\'s dependencies'
+            ],
+            'answer': 'B'
+        }
+    ],
+    'Chapter 9': [
+        {
+            'question': 'Q23: What is the primary difference between Fragments and Activities in Android programming?',
+            'options': [
+                'a) Fragments are reusable UI components, while Activities represent app screens',
+                'b) Activities are reusable UI components, while Fragments represent app screens',
+                'c) Fragments are part of the Activity Lifecycle, while Activities are not',
+                'd) Activities are part of the Fragment Lifecycle, while Fragments are not'
+            ],
+            'answer': 'A'
+        }
+    ],
+    'Chapter 10': [
+        {
+            'question': 'Q24: What is the primary responsibility of a ViewHolder in RecyclerView?',
+            'options': [
+                'a) To manage database connections',
+                'b) To handle network requests',
+                'c) To store and recycle views for efficient scrolling',
+                'd) To handle app permissions'
+            ],
+            'answer': 'C'
+        }
+    ],
+    'Chapter 11': [
+        {
+            'question': 'Q25: What is the difference between margins and padding in Android layouts?',
+            'options': [
+                'a) Margins define the space outside the view, while padding defines the space inside the view',
+                'b) Padding defines the space outside the view, while margins define the space inside the view',
+                'c) Margins and padding are interchangeable terms',
+                'd) Margins define the space between views, while padding defines the space between the view\'s content and its boundaries'
+            ],
+            'answer': 'A'
+        }
+    ],
+    'Chapter 12': [
+        {
+            'question': 'Q26: What is the primary purpose of using coroutines in Android programming?',
+            'options': [
+                'a) To manage app permissions',
+                'b) To handle asynchronous code execution',
+                'c) To store UI-related data',
+                'd) To manage database connections'
+            ],
+            'answer': 'B'
+        }
+      ],
+'Chapter 13': [
+    {
+        'question': 'Q27: What does "Unidirectional Data Flow" mean in the context of Android programming?',
+        'options': [
+            'a) Data flows in a single direction from a source to a destination',
+            'b) Data flows in multiple directions between sources and destinations',
+            'c) Data flows in a loop between sources and destinations',
+            'd) Data flows in a hierarchical structure between sources and destinations'
+        ],
+        'answer': 'A'
+    }
+],
+'Chapter 14': [
+    {
+        'question': 'Q28: What is the purpose of serialization in Android programming?',
+        'options': [
+            'a) To convert an object into a format suitable for storage or transmission',
+            'b) To create a deep copy of an object',
+            'c) To compare two objects for equality',
+            'd) To manage the memory allocated for an object'
+        ],
+        'answer': 'A'
+    }
+],
+'Chapter 15': [
+    {
+        'question': 'Q29: Which of the following is a characteristic of an overflow menu in Android programming?',
+        'options': [
+            'a) Appears on the app bar',
+            'b) Displays a list of all available actions',
+            'c) Can be accessed by pressing the three little dots',
+            'd) all of the above'
+        ],
+        'answer': 'D'
+    }
+],
+'Chapter 16': [
+    {
+        'question': 'Q30: Which of the following is NOT part of an Implicit Intent in Android programming?',
+        'options': [
+            'a) Action',
+            'b) Data',
+            'c) Category',
+            'd) Component name'
+        ],
+        'answer': 'D'
+    }
+],
+
+
+
+    'Chapter 1: GeoQuiz': [
         {
             'question': 'What is the purpose of the "Toast" class in Android development?',
             'options': [
@@ -47,16 +361,6 @@ study_guide = {
     ],
     'Chapter 3: GeoQuiz': [
         {
-            'question': 'What does Figure 3.3 in Chapter 3 of GeoQuiz illustrate?',
-            'options': [
-                'a) The layout structure of an activity',
-                'b) The activity lifecycle states',
-                'c) The wiring up process using ViewBinding',
-                'd) The use of "lateinit" in Kotlin'
-            ],
-            'answer': 'B'
-        },
-        {
             'question': 'How can log functions be used to monitor the activity lifecycle?',
             'options': [
                 'a) By displaying toast messages',
@@ -69,16 +373,6 @@ study_guide = {
     ],
     'Chapter 4: GeoQuiz': [
         {
-            'question': 'Which component is responsible for managing the lifecycle of a ViewModel?',
-            'options': [
-                'a) Activity',
-                'b) SavedStateHandle',
-                'c) ViewModel lifecycle',
-                'd) Fragment'
-            ],
-            'answer': 'C'
-        },
-        {
             'question': 'What is a potential issue associated with improper handling of ViewModel instances?',
             'options': [
                 'a) Memory leak',
@@ -90,16 +384,6 @@ study_guide = {
         }
     ],
     'Chapter 7: GeoQuiz': [
-        {
-            'question': 'Which file is used to declare activities in the AndroidManifest.xml file?',
-            'options': [
-                'a) R class',
-                'b) Toast class',
-                'c) ActivityManager',
-                'd) Manifest file'
-            ],
-            'answer': 'D'
-        },
         {
             'question': 'How can an activity start another activity using an explicit intent?',
             'options': [
@@ -121,16 +405,6 @@ study_guide = {
                 'd) Activities are tied to a specific screen, while fragments can be reused in multiple screens'
             ],
             'answer': 'D'
-        },
-        {
-            'question': 'How can data binding between a fragment and its layout be achieved?',
-            'options': [
-                'a) Using the FragmentManager',
-                'b) By implementing the back binding technique',
-                'c) Fragments do not support data binding',
-                'd) By using the Adapter class'
-            ],
-            'answer': 'C'
         }
     ],
     'Chapter 10: CriminalIntent': [
@@ -157,7 +431,7 @@ study_guide = {
     ],
     'Chapter 11: CriminalIntent': [
         {
-            'question': 'In ConstraintLayout, what does the "match constraints" option do?',
+            'question': 'In ConstraintLayout, what does the "match_parent" option do?',
             'options': [
                 'a) It makes the view\'s size match the size of its parent layout',
                 'b) It sets the view\'s size to a fixed value in pixels',
@@ -222,16 +496,6 @@ study_guide = {
         }
     ],
     'Chapter 14: CriminalIntent': [
-        {
-            'question': 'What is a DialogFragment in Android?',
-            'options': [
-                'a) A fragment used for handling HTTP requests',
-                'b) A fragment specifically designed for displaying dialogs',
-                'c) A class for handling date and time calculations',
-                'd) A fragment responsible for managing image galleries'
-            ],
-            'answer': 'B'
-        },
         {
             'question': 'Which class can be used for handling dates and times in Java and Android?',
             'options': [
@@ -377,41 +641,41 @@ study_guide = {
     ]
 }
 
-            
-
-
 def main():
     print("Android Development Quiz")
     print("-------------------------")
 
     correct_answers = 0
-    total_questions = 0
+    total_questions = sum(len(questions) for questions in study_guide.values())
 
     chapters = list(study_guide.keys())
-    random.shuffle(chapters)
+    remaining_questions = {chapter: set(range(len(study_guide[chapter]))) for chapter in chapters}
 
     try:
-        for chapter in chapters:
-            questions = study_guide[chapter]
-            random.shuffle(questions)
+        while sum(len(questions) for questions in remaining_questions.values()) > 0:
+            chapter = random.choice(chapters)
+            if not remaining_questions[chapter]:
+                chapters.remove(chapter)
+                continue
 
-            for question in questions:
-                print(f"{chapter}: {question['question']}")
-                for option in question['options']:
-                    print(option)
+            question_index = random.choice(list(remaining_questions[chapter]))
+            remaining_questions[chapter].remove(question_index)
+            question = study_guide[chapter][question_index]
 
-                user_answer = input("Enter your answer (A/B/C/D) or 'Q' to quit: ").upper()
+            print(f"{chapter}: {question['question']}\n")
+            for option in question['options']:
+                print(option)
 
-                if user_answer == 'Q':
-                    raise KeyboardInterrupt
+            user_answer = input("\nEnter your answer (A/B/C/D) or 'Q' to quit: ").upper()
 
-                if user_answer == question['answer']:
-                    correct_answers += 1
-                    print("Correct!\n")
-                else:
-                    print(f"Incorrect. The correct answer is {question['answer']}\n")
+            if user_answer == 'Q':
+                raise KeyboardInterrupt
 
-                total_questions += 1
+            if user_answer == question['answer']:
+                correct_answers += 1
+                print("\nCorrect!\n")
+            else:
+                print(f"\nIncorrect. The correct answer is {question['answer']}\n")
 
     except KeyboardInterrupt:
         pass
